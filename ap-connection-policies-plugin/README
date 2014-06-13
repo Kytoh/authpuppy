@@ -1,0 +1,18 @@
+# apConnectionPoliciesPlugin plugin (for symfony 1.4 and authpuppy 1.0) #
+
+This plugin allows to define network policies for various authentication 
+types and subtypes of the system.  Connections policies are the data throughput 
+and/or duration of the connection for a given period or absolute.  When someone 
+connect to the network, the maximum data throughput or connection expiration is 
+calculated.  The least of the policies that apply is taken.
+
+
+LICENSE
+-------
+
+see LICENSE file
+
+INSTALLATION
+------------
+
+see http://authpuppy.org/doc

@@ -1,0 +1,41 @@
+apPhysicalUser:
+  actAs: [Timestampable]
+  tableName: apPhysicalUser
+  columns:
+    first_name:
+      type: string(255)
+      notnull: true
+    last_name:
+      type: string(255)
+      notnull: true
+    birth_date: 
+      type: timestamp
+    birth_place:
+      type: string(255)
+    address:
+      type: string(255)
+    city:
+      type: string(100)
+    province:
+      type: string(100)
+    zip:
+      type: string(50)
+    status:
+      type: string(50)
+    document_type:
+      type: string(50) 
+    document:
+      type: string(255)
+    simple_network_id:
+      type: integer     
+  indexes:
+    name_idx:
+      fields: [name]
+      type: unique
+  relations:
+    apSimpleNetwork:
+      class: apSimpleNetwork
+      local: simple_network_id
+      foreign: id
+      type: one
+      onDelete: CASCADE

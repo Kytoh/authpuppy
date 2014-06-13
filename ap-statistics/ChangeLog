@@ -1,0 +1,25 @@
+0.1.2:
+  - Added a global statistics report
+  - Removed the expert report from the list (has not been tested enough, use at your own risks)
+  - Added a default date range of 1 month to reports
+  - Some french translations
+
+0.1.1:
+  - Added an expert-only custom report
+  - Also modified the addDoctrineList base function to add some parameters if necessary
+  - Added a recursive function to fetch all objects data reference for when reports include more tables
+
+0.1.1-alpha: bzr 4
+  - Added node reports and user reports (shortcuts for some often used connection report functionnalities)
+  - A report value can now be of type 'size' and it will show size readable string instead of the integer
+  - bug fix: added the time to the date range (from 0:0:0, to 23:59:59)
+
+0.1.0-alpha: bzr 3
+  - Corrected minor typos
+  - Statistics menu appear for support role, not admin
+  
+0.1.0-dev: bzr 2
+  - Connection report per node, per user, per authenticator for a date range
+  
+
+  

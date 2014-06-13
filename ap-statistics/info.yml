@@ -1,0 +1,7 @@
+info:
+  version: 0.1.2
+  stability: alpha 
+  summary: Generic report generator and default reports for the elements of the authpuppy core
+  description: Allows the generation of generic reports and contains the default reports for the elements of the authpuppy core.  This plugin also contain facilities and base classes that can be used by other plugins to build reports of their own
+  website: http://launchpad.net/authpuppy
+  source: bzr branch lp:~alliancecsf-dev/authpuppy/aapStatisticsPlugin

@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+
+#map_canvas {
+  height: 500px;
+  width: 600px;
+}
+
+#map_hotspots_list {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+#mapdiv table tr td {
+  background-color: #ffffff;
+  border: 0px;
+}
+
+#map_hotspots_list a {
+  font-size: smaller;
+}

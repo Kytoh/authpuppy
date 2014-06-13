@@ -1,0 +1,72 @@
+apConnectionPolicies:
+  tableName: ap_connection_policies
+  columns:
+    policy_name:
+      type: string(50)
+    type:
+      type: string(20)
+      notnull: true
+    scope:
+      type: string(15)
+      notnull: true
+    auth_type: 
+      type: string(255)
+    auth_sub_type:
+      type: string(255)
+    max_incoming:
+      type: integer
+    max_outgoing:
+      type: integer
+    max_total:
+      type: integer
+    max_duration:
+      type: string(50)
+    time_window:
+      type: string(50)
+    expiration:
+      type: string(50)
+    identity_and_machine:
+      type: boolean
+  indexes:
+    unique_policy:
+      fields: [name, type, scope]
+      type: unique
+  options:
+    symfony:
+      filter: false 
+      
+apApplicablePolicies:
+  tableName: ap_applicable_policies
+  columns:
+    connection_id:
+      type: integer
+      notnull: true
+    policy_id:
+      type: integer
+      notnull: true
+    max_total_data:
+      type: integer
+    disconnect_at:
+      type: timestamp
+    type:
+      type: string(20)
+  indexes:
+    conn_idx:
+      fields: [connection_id]
+  relations:
+    Connection:
+      class: Connection
+      local: connection_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    Policy:
+      class: apConnectionPolicies
+      local: policy_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+  options:
+    symfony:
+      filter: false 
+      form: false

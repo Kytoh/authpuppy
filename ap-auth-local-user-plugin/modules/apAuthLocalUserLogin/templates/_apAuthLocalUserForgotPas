@@ -1,0 +1,29 @@
+<?php use_stylesheets_for_form($form) ?>
+<?php use_javascripts_for_form($form) ?>
+
+  <table>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          <?php echo $form->renderHiddenFields();?>
+          <input type="hidden" name="link" value="forgotpwd"/>
+          <input type="submit" name="submit[apAuthLocalUserforgotpwd]" value="Send my password" />
+        </td>
+      </tr>
+      <tr>
+      	
+      </tr>
+    </tfoot>
+    <tbody>
+      <?php echo $form->renderGlobalErrors() ?>
+      <tr>
+        <th><?php echo $form['email_address']->renderLabel() ?></th>
+        <td>
+          <?php echo $form['email_address']->renderError() ?>
+          <?php echo $form['email_address'] ?>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+

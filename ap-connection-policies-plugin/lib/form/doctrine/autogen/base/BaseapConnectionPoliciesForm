@@ -1,0 +1,99 @@
+<?php
+
+// +------------------------------------------------------------------------+
+// | AuthPuppy Authentication Server                                        |
+// | =============================                                          |
+// |                                                                        |
+// | AuthPuppy is the new generation of authentication server for           |
+// | a wifidog based captive portal suite                                   |
+// +------------------------------------------------------------------------+
+// | PHP version 5 required.                                                |
+// +------------------------------------------------------------------------+
+// | Homepage:     http://www.authpuppy.org/                                |
+// | Launchpad:    http://www.launchpad.net/authpuppy                       |
+// +------------------------------------------------------------------------+
+// | This program is free software; you can redistribute it and/or modify   |
+// | it under the terms of the GNU General Public License as published by   |
+// | the Free Software Foundation; either version 2 of the License, or      |
+// | (at your option) any later version.                                    |
+// |                                                                        |
+// | This program is distributed in the hope that it will be useful,        |
+// | but WITHOUT ANY WARRANTY; without even the implied warranty of         |
+// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          |
+// | GNU General Public License for more details.                           |
+// |                                                                        |
+// | You should have received a copy of the GNU General Public License along|
+// | with this program; if not, write to the Free Software Foundation, Inc.,|
+// | 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.            |
+// +------------------------------------------------------------------------+
+
+
+/**
+ * apConnectionPolicies form base class.
+ *
+ * @method apConnectionPolicies getObject() Returns the current form's model object
+ *
+ * @package    apConnectionPoliciesPlugin
+ * @author     Geneviève Bastien <gbastien@versatic.net>
+ * @copyright  2010
+ * @version    $Version: 0.1.2$
+ */
+abstract class BaseapConnectionPoliciesForm extends BaseFormDoctrine
+{
+  public function setup()
+  {
+    $this->setWidgets(array(
+      'id'                   => new sfWidgetFormInputHidden(),
+      'policy_name'          => new sfWidgetFormInputText(),
+      'type'                 => new sfWidgetFormInputText(),
+      'scope'                => new sfWidgetFormInputText(),
+      'auth_type'            => new sfWidgetFormInputText(),
+      'auth_sub_type'        => new sfWidgetFormInputText(),
+      'max_incoming'         => new sfWidgetFormInputText(),
+      'max_outgoing'         => new sfWidgetFormInputText(),
+      'max_total'            => new sfWidgetFormInputText(),
+      'max_duration'         => new sfWidgetFormInputText(),
+      'time_window'          => new sfWidgetFormInputText(),
+      'expiration'           => new sfWidgetFormInputText(),
+      'identity_and_machine' => new sfWidgetFormInputCheckbox(),
+      'status_message'       => new sfWidgetFormInputText(),
+      'status_display' => new sfWidgetFormInputCheckbox(),
+    ));
+
+    $this->setValidators(array(
+      'id'                   => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
+      'policy_name'                 => new sfValidatorString(array('max_length' => 50)),
+      'type'                 => new sfValidatorString(array('max_length' => 20)),
+      'scope'                => new sfValidatorString(array('max_length' => 15)),
+      'auth_type'            => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'auth_sub_type'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'max_incoming'         => new sfValidatorNumber(array('required' => false)),
+      'max_outgoing'         => new sfValidatorNumber(array('required' => false)),
+      'max_total'            => new sfValidatorNumber(array('required' => false)),
+      'max_duration'         => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'time_window'          => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'expiration'           => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'identity_and_machine' => new sfValidatorBoolean(array('required' => false)),
+      'status_message'       => new sfValidatorString(array('max_length' => 1000)),
+      'status_display' => new sfValidatorBoolean(array('required' => false)),
+    ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'apConnectionPolicies', 'column' => array('name', 'type', 'scope')))
+    );
+
+    $this->widgetSchema->setNameFormat('ap_connection_policies[%s]');
+
+    $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
+
+    $this->setupInheritance();
+
+    parent::setup();
+  }
+
+  public function getModelName()
+  {
+    return 'apConnectionPolicies';
+  }
+
+}

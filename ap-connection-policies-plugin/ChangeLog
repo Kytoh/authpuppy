@@ -1,0 +1,32 @@
+0.1.3-alpha:
+  - Added an optional status_display field for the policies to allow policy status not to be displayed before the portal page (bug #743846)
+  - Corrected data type for max consumption.  Is now float instead of integer. (bug #769993)
+  - Connection policies can be deleted (bug #674491)
+
+0.1.2: bzr 12
+  - Added a message on policy status page when no policies apply (Bug #662316)
+  - Added post-validator to policy form for type relative and time window (Bug  #672736)
+  - Set the default value of max_total_data to null instead of 0
+
+0.1.2-beta: bzr 7
+  - Corrected bug when displaying the status object
+  - Relative time policies with max duration now work
+    
+0.1.2-alpha: bzr 6
+  - Corrected a bug with php 5.3 and the DateTime object
+  - Added the policy name field to be used to identify policies
+  - Corrected a bug where a first connection for an identity was always expired
+  - Changed the templates for the policy status display
+  - Added the event policies.getting_applicable called when getting the applicable policies for a connection
+  
+0.1.1-alpha: bzr 5
+  - Added a hook to portal page to display the network policies status (if any) before redirecting to portal page
+  - Added translations
+  - Improved readability of the connection status messages
+  - Added some css for the connection status messages
+  
+0.1.1-dev: bzr 4
+  - Added a way to manage and feedback to users their status on all applicable policies for a given connection, not just the limit of it.
+    
+0.1.0: bzr 3
+  - Policies (absolute and relative, bandwidth and duration) seem to work but not tested exhaustively

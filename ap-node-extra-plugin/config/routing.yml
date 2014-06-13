@@ -1,0 +1,23 @@
+ap_nodeextra_createsteal:
+  url:   /nodeextra/createsteal
+  param: { module: apNodeExtra, action: createsteal }
+  
+ap_nodeextra_nodelist_format:
+  url:   /nodeextra/list/:format
+  param: { module: apNodeExtra, action: nodelist }
+  
+ap_nodeextra_nodelist:
+  url:   /nodeextra/list
+  param: { module: apNodeExtra, action: nodelist }
+  
+ap_nodeextra_map:
+  url:   /nodeextra/map
+  param: { module: apNodeExtra, action: map }
+  
+ap_nodeextra_list_legacy:
+  url:  /hotspot_status.php
+  param: { module: apNodeExtra, action: nodelist }
+  
+ap_nodeextra_map_legacy:
+  url:  /hotspots_map.php
+  param: {module: apNodeExtra, action: map }

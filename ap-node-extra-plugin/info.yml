@@ -1,0 +1,9 @@
+info:
+  summary: Add some functionnalities to nodes, geolocation, create or steal node
+  description: | 
+      Nodes can be automatically geolocated, using different mapping services.  
+      Also it is possible to automatically create or steal node when a connection is made to a node that does not exist
+  website: http://launchpad.net/authpuppy
+  source: bzr branch lp:~alliancecsf-dev/authpuppy/apNodeExtraPlugin
+  version: 0.1.3
+  stability: dev 

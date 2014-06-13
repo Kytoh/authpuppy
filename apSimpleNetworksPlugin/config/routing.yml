@@ -1,0 +1,39 @@
+
+ap_simple_network_index:
+  url:   /snetwork
+  param: { module: apSimpleNetwork, action: index }
+  
+ap_simple_network_new:
+  url:   /snetwork/new
+  param: { module: apSimpleNetwork, action: new }
+
+ap_simple_network_create:
+  url:   /snetwork/create
+  param: { module: apSimpleNetwork, action: create }
+  
+ap_simple_network_update:
+  url:   /snetwork/update
+  param: { module: apSimpleNetwork, action: update }
+  
+ap_simple_network_show:
+  url:   /snetwork/show/:id
+  class:   sfDoctrineRoute
+  options: { model: apSimpleNetwork, type: object, column: id } 
+  param: { module: apSimpleNetwork, action:show }
+  
+ap_simple_network_edit:
+  url:   /snetwork/edit/:id
+  class:   sfDoctrineRoute
+  options: { model: apSimpleNetwork, type: object, column: id } 
+  param: { module: apSimpleNetwork, action: edit }
+  
+delete:
+  url:   /snetwork/delete/:id
+  class:   sfDoctrineRoute
+  options: { model: apSimpleNetwork, type: object, column: id } 
+  param: { module: apSimpleNetwork, action: delete }
+  requirements:
+    sf_method: [delete]
+    
+
+    

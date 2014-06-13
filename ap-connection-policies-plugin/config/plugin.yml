@@ -1,0 +1,2 @@
+configure:
+  config_route: ap_connection_policies_index

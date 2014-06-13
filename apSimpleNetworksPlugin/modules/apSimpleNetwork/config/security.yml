@@ -1,0 +1,7 @@
+all:
+  is_secure: true
+  credentials: admin
+  
+ap_simple_network_stats:
+  is_secure: true
+  credentials: network_manager

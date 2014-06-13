@@ -1,0 +1,43 @@
+apSimpleNetwork:
+  actAs: [Timestampable]
+  tableName: ap_simple_network
+  columns:
+    name:
+      type: string(50)
+      notnull: true
+    address:
+      type: string(255)
+    owner:
+      type: string(255)
+    email:
+      type: string(255)      
+  indexes:
+    name_idx:
+      fields: [name]
+      type: unique
+  options:
+    symfony:
+      filter: false
+
+apNetworkUser:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      primary: true
+    simple_network_id:
+      type: integer
+      primary: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      onDelete: CASCADE
+    SimpleNetwork:
+      class: apSimpleNetwork
+      local: simple_network_id
+      onDelete: CASCADE

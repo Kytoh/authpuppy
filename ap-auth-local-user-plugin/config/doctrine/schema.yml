@@ -1,0 +1,57 @@
+apUser:
+  tableName: ap_user
+  columns:
+    username:
+      type: string(50)
+      notnull: true
+    password:
+      type: string(50)
+      notnull: true
+    email:
+      type: string(255)
+      notnull: true
+    registered_on: 
+      type: timestamp
+      notnull: true
+    validation_token:
+      type: string(40)
+    status:
+      type: integer
+      default: -1
+    username_lower:
+      type: string(50)      
+  indexes:
+    username_idx:
+      fields: [username]
+      type: unique
+    email_idx:
+      fields: [email]
+      type: unique
+    username_lower_idx:
+      fields: [username_lower]
+      type: index
+
+      
+apUserRememberMe:
+  tableName: ap_user_remember_me
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    remember_me_cookie:
+      type: string(50)
+      notnull: true
+  indexes:
+    remember_me_cookie_idx:
+      fields: [remember_me_cookie]
+  relations:
+    apUser:
+      class: apUser
+      local: user_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+  options:
+    symfony:
+      filter: false 
+      form: false

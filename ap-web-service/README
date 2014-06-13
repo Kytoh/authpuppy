@@ -1,0 +1,15 @@
+# apWebService plugin (for symfony 1.4 and authpuppy 1.0) #
+
+This plugin implements an API to access information from the authpuppy database 
+(nodes, users, etc.) by a third-party application.
+
+
+LICENSE
+-------
+
+see LICENSE file
+
+INSTALLATION
+------------
+
+see http://authpuppy.org/doc

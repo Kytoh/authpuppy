@@ -1,0 +1,26 @@
+<?php use_stylesheets_for_form($form) ?>
+<?php use_javascripts_for_form($form) ?>
+<form action="<?php echo url_for('@ap_authlocaluser_changepwd')?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
+
+  <table>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          <?php /*echo $form->renderHiddenFields();*/ ?>
+          <input type="submit" name="submit[apAuthLocalUserAccount]" value="<?php echo __("Save"); ?>" />
+        </td>
+      </tr>
+    </tfoot>
+    <tbody>
+      
+      <tr>
+        <th></th>
+        <td>
+          <?php echo $form ?>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </form>
+
+

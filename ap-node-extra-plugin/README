@@ -1,0 +1,17 @@
+# apNodeExtraPlugin plugin (for symfony 1.4 and authpuppy 1.0) #
+
+This plugin adds new functionnalities to nodes
+
+- Allows to automatically create or steal a node when a new device first reaches the auth server
+- Can geolocate nodes and show them on a map (using either GoogleMap or OpenLayers with Cloudmate)
+
+
+LICENSE
+-------
+
+see LICENSE file
+
+INSTALLATION
+------------
+
+see http://authpuppy.org/doc

@@ -1,0 +1,53 @@
+
+ap_local_user_token_index:
+  url:   /usertoken
+  param: { module: apLocalUserToken, action: index }
+  
+ap_local_user_token_new:
+  url:   /usertoken/new
+  param: { module: apLocalUserToken, action: new }
+
+ap_local_user_token_create:
+  url:   /usertoken/create
+  param: { module: apLocalUserToken, action: create }
+  
+ap_local_user_token_update:
+  url:   /usertoken/update
+  param: { module: apLocalUserToken, action: update }
+  
+ap_local_user_token_show:
+  url:   /usertoken/show/:id
+  class:   sfDoctrineRoute
+  options: { model: apPhysicalUser, type: object, column: id } 
+  param: { module: apLocalUserToken, action:show }
+  
+ap_local_user_token_edit_0:
+  url:   /usertoken/edit/:id/:has_ticket
+  class:   sfDoctrineRoute
+  options: { model: apPhysicalUser, type: object, column: id } 
+  param: { module: apLocalUserToken, action: edit }
+  
+ap_local_user_token_edit:
+  url:   /usertoken/edit/:id
+  class:   sfDoctrineRoute
+  options: { model: apPhysicalUser, type: object, column: id } 
+  param: { module: apLocalUserToken, action: edit }
+  
+
+  
+ap_local_user_token_delete:
+  url:   /usertoken/delete/:id
+  class:   sfDoctrineRoute
+  options: { model: apPhysicalUser, type: object, column: id } 
+  param: { module: apLocalUserToken, action: delete }
+  requirements:
+    sf_method: [delete]
+    
+ap_local_user_token_view_ticket:
+  url: /usertoken/ticket
+  param: { module: apLocalUserToken, action: viewTicket } 
+
+ap_network_user_stats:
+  url: /statistics/apReportNetworkUser
+  param: { module: apStatistics, action: report, report_name: apReportNetworkUser }
+    

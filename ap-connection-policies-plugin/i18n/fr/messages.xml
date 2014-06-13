@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="fr" datatype="plaintext" original="messages" date="2010-09-01T18:58:27Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Network policies</source>
+        <target>Politiques de réseau</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Policy type</source>
+        <target>Type de politique</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Scope</source>
+        <target>Portée</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Authenticator</source>
+        <target>Authentificateur</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Authenticator sub-type</source>
+        <target>Sous-type d'authentificateur</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>New</source>
+        <target>Nouveau</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>You have used &lt;strong&gt;%s out of %s&lt;/strong&gt; to this connection</source>
+        <target>Vous avez utilisé &lt;strong&gt;%s de %s&lt;/strong&gt; permis pour cette connection</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Remaining %s to this connection</source>
+        <target>Il reste %s à cette connection</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Remaining %d out of %d to this connection</source>
+        <target>Il vous reste &lt;strong&gt;%d de %d&lt;/strong&gt; permis pour cette connection</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Redirecting to portal page in</source>
+        <target>Redirection vers la page portail dans</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>seconds</source>
+        <target>secondes</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Edit Network Policy</source>
+        <target>Éditer politiques réseau</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>New Policy</source>
+        <target>Nouvelle politique</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>"%value%" is not an integer.</source>
+        <target>"%value%" n'est pas un entier</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>"%value%" must be at most %max%.</source>
+        <target>"%value%" doit être au maximum %max%.</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>"%value%" must be at least %min%.</source>
+        <target>"%value%" doit être au minimum %min%.</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>A policy with identical values for "%column%" already exists.</source>
+        <target>Il existe déjà une politique avec des valeurs identiques de "%column%"</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>The sub auth type selected must be in the selected auth type</source>
+        <target>Le sous-type d'authentificateur doit faire partie de l'authentificateur sélectionné</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Auth type</source>
+        <target>Authentificateur</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Auth sub type</source>
+        <target>Sous-type authentificateur</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Max total bytes</source>
+        <target>Nombre d'octets max total</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Max duration</source>
+        <target>Durée maximale</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Time window</source>
+        <target>Fenêtre de temps</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Expiration</source>
+        <target>Expiration</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Identity and machine</source>
+        <target>Identité et machine (mac)</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Expiry Message</source>
+        <target>Message d'expiration</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Absolute</source>
+        <target>Absolu</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Relative</source>
+        <target>Relatif</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Global</source>
+        <target>Globale</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Local</source>
+        <target>Locale</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>All</source>
+        <target>Tous</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Total number of bytes (upload and download) this identity is allowed to transfer</source>
+        <target>Nombre maximal d'octets (téléchargement et téléversement) pouvant être transféré</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Maximum amount of time one can be actively connected.  Expected format: [0-9]+ (minute|hour|day|week|month)</source>
+        <target>Temps maximum pendant lequel l'identité peut être activement connectée.  Format attendu: [0-9]+ (minute|hour|day|week|month)</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Absolute amount of time from the first connection before the identity expires.  Expected format: [0-9]+ (minute|hour|day|week|month)</source>
+        <target>Temps absolu depuis la première connection après quoi l'identité expire.  Format attendu: [0-9]+ (minute|hour|day|week|month)</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>If type is relative, this value is used as the time window back from which the transfer or duration is calculated.  Expected format: [0-9]+ (minute|hour|day|week|month)</source>
+        <target>Si le type est relatif, cette valeur représente la période avant la connection pour laquelle le transfert ou la durée sont calculés.  Format attendu: [0-9]+ (minute|hour|day|week|month)</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Absolute: duration or transfer total apply for the life of the identity; Relative: duration or transfer total apply to the last time window</source>
+        <target>Absolu: durée ou transfert total s'applique pour toute la vie de l'identité; Relatif: durée ou transfert total s'applique uniquement durant la dernière fenêtre de temps</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Global: for all nodes; Local: only on the current node</source>
+        <target>Globale: pour tous les noeuds; Locale: seulement le noeud courant</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>If checked, the policies is valid not only for the identity connecting, but also for the machine (MAC address)</source>
+        <target>Si coché, la politique est valide non seulement pour l'identité qui se connecte, mais aussi pour la machien (addresse MAC)</target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>View connection status</source>
+        <target>Status de la connection</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>No policy apply to this connection.</source>
+        <target>Aucune politique ne s'applique à cette connection.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

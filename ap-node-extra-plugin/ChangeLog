@@ -1,0 +1,37 @@
+0.1.3:
+  - Corrected bug with nodes on map with no GPS coordinates (bug #746070)
+  - Non-Wifidog nodes can now be shown on hotspot map (bug #721928)
+  - Added polish translations by Robin Jones (in bug #719687)
+
+0.1.2-stable: bzr 16
+  - Patch for IE6 map by Robin Jones (bug #662244)
+  - Not dependant on curl anymore
+  - Added README and LICENSE files
+
+0.1.2-beta: bzr 14
+  - Bug fix: maps didn't work in Internet Explorer
+  - Also changed layout of map page so it looks good in both IE and FF
+  - Corrected bug where markers shown were all the same (bug #662483)
+  - Inserted patch by Robin Jones for servers without file_get_content (bug #661535)
+
+0.1.2-alpha: bzr 11
+  - Changed path of images when server not in the root
+  - Added this file
+
+0.1.2-dev:
+  - Corrected menu problem
+  - option allow create or steal node can now be disabled
+  - corrected url to get node info when server not in the root of the server
+
+0.1.1: 
+  - Correction to links and image paths when app is not at the root of the server
+  - Added french translation strings
+
+0.1.0: 
+  Initial version of this plugin
+    - Geolocation with GoogleMap, maps with GoogleMap or OpenLayers
+    - Automatically create or steal nodes when a node does not exist.
+
+
+  
+  

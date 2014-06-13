@@ -1,0 +1,7 @@
+0.1.3-alpha: bzr 17
+  - Updated the auth method to reflect recent changes to core
+  - Added call to get auth errors to inform the caller of why the authentication was unsuccessful
+
+0.1.2-alpha: 
+  - Added this file
+  - Security.yml now in the module config instead of plugin config (had to enter credentials otherwise...)

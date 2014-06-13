@@ -1,0 +1,50 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+  
+ap_authlocaluser_login:
+  url:   /authlocaluser
+  param: { module: apAuthLocalUserLogin, action: index }
+  
+ap_authlocaluser_new:
+  url:   /authlocaluser/new
+  param: { module: apAuthLocalUserLogin, action: new }
+  
+ap_authlocaluser_show:
+  url:   /authlocaluser/show/:id
+  class:   sfDoctrineRoute
+  options: { model: apUser, type: object, column: id } 
+  param: { module: apAuthLocalUserLogin, action:show }
+  
+ap_authlocaluser_edit:
+  url:   /authlocaluser/edit/:id
+  class:   sfDoctrineRoute
+  options: { model: apUser, type: object, column: id } 
+  param: { module: apAuthLocalUserLogin, action: edit }
+  
+ap_authlocaluser_delete:
+  url:   /authlocaluser/delete/:id
+  class:   sfDoctrineRoute
+  options: { model: apUser, type: object, column: id } 
+  param: { module: apAuthLocalUserLogin, action: delete }
+  requirements:
+    sf_method: [delete]
+    
+ap_authlocaluser_validate:
+  url:   /authlocaluser/validate/:validation_token
+  class:   sfDoctrineRoute
+  options: { model: apUser, type: object, column: validation_token } 
+  param: { module: apAuthLocalUserLogin, action: validate }
+  
+ap_authlocaluser_changepwd:
+  url:   /authlocaluser/my-account
+  param: { module: apAuthLocalUserLogin, action: myaccount }
+
+ap_authlocaluser_action:
+  url:   /authlocaluser/:action/*
+  param: { module: apAuthLocalUserLogin }
+  
+
+
+  
+

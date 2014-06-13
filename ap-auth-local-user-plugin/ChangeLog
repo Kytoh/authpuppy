@@ -1,0 +1,81 @@
+0.1.6-beta:
+  - Changed the behavior of the changing password interface (bug #744007)
+  - Added german translations
+  - Option to have only one connection per username (all other connections are expired) (bug #1029879)
+
+0.1.6-alpha: bzr 38
+  - Added a few useful event calls to this plugin
+  - Changed the menu behavior 
+  - Added parameter to the generateRandomPassword to specify the possible values
+  - Added the proper credentials for the actions
+  - Sends the node as parameter to the signin form  
+  - Username cannot be blank spaces anymore (#772751)
+  - Disable the CSRF protection on the signup form
+  - Implements the getErrors function of the authenticator
+
+0.1.5-beta: bzr 33
+  - Corrected security issue on the my-account form where users could change the value of id (bug #775250)
+  - Text before and text after are not mandatory anymore (bug #766604)
+
+0.1.5-alpha: bzr 32
+  - Added a remember me functionnality (bug #714594)
+  - Added polish translation by Robin Jones (in bug #719687)
+  - Can now add text before and after login form (bug #712219)
+  - Change image path for first, previous, next, and last for user list
+  - Corrected filter paging bug (bug #708984)
+
+0.1.5-dev: bzr 30
+  - No validation on old password length (for backward compatibility with wifidog imported records) (bug #674702)
+  - Use user id instead of username in url path to view or edit users (bug #680281)
+
+0.1.4: bzr 29
+  - Changed title of local user list (bug #651424)
+  - Some more french translations
+  - Denied and locked accounts are really denied access (bug #662241)
+  - When validation by email needed, a checkbox appears in the signup form to warn the user (bug #662322)
+  
+0.1.4-beta: bzr 27
+  - Unsecured the validate action
+  - Corrected a javascript bug in Internet Explorer on the signin form
+  
+0.1.4-alpha: bzr 26
+  - Added a few more french translations
+  - Changed readability of signin form
+  
+0.1.4-dev: bzr 25
+  - Few minor modifications on menu, arrays
+  - Connections now use the field username instead of id (more explicit). 
+  - Added some (untested) events to add columns when listing users
+  - Added possibility to by-pass new user logic (for importing new users)
+  
+0.1.3: 
+  - Case sensitivity now configurable (if database permits)
+  - Added form to edit own account
+  - Added subtypes to the authenticator for greater granularity of authentication status
+  - Added french translation strings
+
+0.1.2 : 
+  - Added indexes
+  
+0.1.1: 
+  - Texts for email validation and new password are now configurable
+  - Title of the authenticator can be personnalized
+  
+0.1.0: 
+  Initial version of this plugin
+    - Username / password authentication
+    - Automatic signup (or not)
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+  

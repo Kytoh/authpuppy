@@ -1,0 +1,17 @@
+# apAuthLocalUserPlugin plugin (for symfony 1.4 and authpuppy 1.0) #
+
+This plugin implements an authenticator with username/password from a 
+local table in the database.
+
+It contains all actions and classes to manage the users.
+
+
+LICENSE
+-------
+
+see LICENSE file
+
+INSTALLATION
+------------
+
+see http://authpuppy.org/doc

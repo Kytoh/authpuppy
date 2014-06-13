@@ -1,0 +1,7 @@
+ap_statistics_main:
+  url:   /statistics
+  param: { module: apStatistics, action: index }
+  
+ap_statistics_report:
+  url:  /statistics/:report_name
+  param: { module: apStatistics, action: report }

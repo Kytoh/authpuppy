@@ -1,0 +1,7 @@
+info:
+  version: 0.1.6
+  stability: beta 
+  summary: Authenticator from a local username / password database, and possibility for users to signup
+  description: AuthPuppy authenticator from a local username / password database, and possibility for users to signup
+  website: http://launchpad.net/authpuppy
+  source: bzr branch lp:~alliancecsf-dev/authpuppy/apAuthLocalUserPlugin

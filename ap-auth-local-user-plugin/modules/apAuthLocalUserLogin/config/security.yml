@@ -1,0 +1,9 @@
+all:
+ is_secure: true
+ credentials: support
+
+myaccount:
+  is_secure: false
+  
+validate:
+  is_secure: false

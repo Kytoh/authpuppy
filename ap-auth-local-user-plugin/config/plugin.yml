@@ -1,0 +1,3 @@
+configure:
+  config_form: apAuthLocalUserConfigureForm
+  

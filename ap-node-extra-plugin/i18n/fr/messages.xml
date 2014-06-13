@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="fr" datatype="plaintext" original="messages" date="2010-07-06T14:31:27Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Show me on the map</source>
+        <target>Montrer sur la carte</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>You can either add a new node or steal an existing one.</source>
+        <target>Vous pouvez soit ajouter un nouveau noeud ou en voler un existent.</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Allow create or steal nodes</source>
+        <target>Permettre d'ajouter ou voler des noeuds</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Map centre latitude</source>
+        <target>Latitude du centre de la carte</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Map centre longitude</source>
+        <target>Longitude du centre de la carte</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Zoom level</source>
+        <target>Niveau de zoom</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Map service</source>
+        <target>Service de carte</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Cloudmade key</source>
+        <target>Clé Cloudmade (pour OpenStreetMap)</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>GoogleMap</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>OpenStreetMap</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Latitude</source>
+        <target>Latitude</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Longitude</source>
+        <target>Longitude</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

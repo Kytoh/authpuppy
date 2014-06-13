@@ -1,0 +1,7 @@
+info:
+  summary: Manage connection policies (bandwith and duration) for the various authenticators of the system
+  description: This plugin allows to define network policies for various authentication types and subtypes of the system.  Connections policies are the data throughput and/or duration of the connection for a given period or absolute.  When someone connect to the network, the maximum data throughput or connection expiration is calculated.  The least of the policies that apply is taken.
+  website: http://launchpad.net/authpuppy
+  source: bzr branch lp:~alliancecsf-dev/authpuppy/apConnectionPoliciesPlugin
+  version: 0.1.3
+  stability: alpha 

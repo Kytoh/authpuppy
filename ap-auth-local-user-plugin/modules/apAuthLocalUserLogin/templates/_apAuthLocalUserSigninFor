@@ -1,0 +1,86 @@
+<?php use_stylesheets_for_form($form) ?>
+<?php use_javascripts_for_form($form) ?>
+<script type="text/javascript">
+	function addLinkElement(object, name) {
+		var linkElement = document.getElementById('link');
+		if (linkElement == null) {
+			linkElement =document.createElement('input');
+			linkElement.setAttribute('type','hidden');
+			linkElement.setAttribute('name','link');
+			linkElement.setAttribute('id','link');
+		}
+		linkElement.setAttribute('value', name);
+		object.parentNode.appendChild(linkElement);
+	}
+	function deleteLinkElement() {
+		var linkElement = document.getElementById('link');
+		if (linkElement != null)
+			linkElement.parentNode.removeChild(linkElement);
+	}
+	function postForgotPassword() {
+	   var object = document.getElementById("submit[apAuthLocalUserconnect]");
+           addLinkElement(object, 'forgotpwd');
+           postForm(object);
+	}
+	function postSignup() {
+		var object = document.getElementById("submit[apAuthLocalUserconnect]");
+		addLinkElement(object, 'signup');
+		postForm(object);
+	}
+	function postForm(object) {
+	    var start = object;
+	    while (start != null) {
+                if (start.nodeName.toLowerCase() == 'form') {
+                    return start.submit();
+                }
+                start = start.parentNode;
+
+	    }
+	}
+	
+</script>
+<?php $plugin = apAuthLocalUserMain::getPlugin(); ?>
+<?php echo __($plugin->getConfigValue('text_before', "")); ?>
+  <table>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          <?php echo $form->renderHiddenFields();?>
+          <input type="submit" name="submit[apAuthLocalUserconnect]" id="submit[apAuthLocalUserconnect]" value="<?php echo __("Connect");?>" onClick="deleteLinkElement()" />
+          <a href="javascript:postForgotPassword()"><?php echo __("I forgot my password"); ?></a><br/>
+          <?php if (apAuthLocalUserMain::getPlugin()->getConfigValue('allow_signup', true)) : ?>
+          <?php echo __("Don't have an account yet?")?><br/><span style="font-weight:bold;border: 1px solid black;padding:2px;"><a href="javascript:postSignup()"><?php echo __("Signup for a free account"); ?></a></span><br/>
+          <?php endif; ?>
+        </td>
+      </tr>
+      <tr>
+      	
+      </tr>
+    </tfoot>
+    <tbody>
+      <?php echo $form->renderGlobalErrors() ?>
+      <tr>
+        <th><?php echo $form['username']->renderLabel() ?></th>
+        <td>
+          <?php echo $form['username']->renderError() ?>
+          <?php echo $form['username'] ?>
+        </td>
+      </tr>
+      <tr>
+        <th><?php echo $form['password']->renderLabel() ?></th>
+        <td>
+          <?php echo $form['password']->renderError() ?>
+          <?php echo $form['password'] ?>
+        </td>
+      </tr>
+      <tr>
+        <th><?php echo $form['remember_me']->renderLabel() ?></th>
+        <td>
+          <?php echo $form['remember_me']->renderError() ?>
+          <?php echo $form['remember_me'] ?>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<?php echo __($plugin->getConfigValue('text_after', "")); ?>

@@ -1,0 +1,11 @@
+ap_connection_policies_index:
+  url:   /policies
+  param: { module: apConnectionPolicies, action: index }
+  
+ap_connection_policies_status:
+  url:   /policies/status
+  param: { module: apConnectionPolicies, action: status }
+
+ap_connection_policies_action:
+  url:   /policies/:action
+  param: { module: apConnectionPolicies }

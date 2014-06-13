@@ -1,0 +1,7 @@
+info:
+  version: 0.1.3
+  stability: alpha
+  summary: AuthPuppy Web Service
+  description: AuthPuppy Web Service
+  website: http://launchpad.net/authpuppy
+  source: bzr branch lp:~alliancecsf-dev/authpuppy/apWebService

@@ -1,0 +1,7 @@
+ap_webservice_general:
+  url:     /ws/
+  param:   { module: apWebService}
+
+ap_webservice_general2:
+  url:     /ws/index.php
+  param:   { module: apWebService}

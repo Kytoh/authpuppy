@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="PL" datatype="plaintext" original="messages" date="2011-02-16T00:15:00Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Show me on the map</source>
+        <target>pokaż lokalizację na mapie</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>You can either add a new node or steal an existing one.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Allow create or steal nodes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Map centre latitude</source>
+        <target>Centrum mapy (szerokość geograficzna)</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Map centre longitude</source>
+        <target>Centrum mapy (długość geograficzna)</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Zoom level</source>
+        <target>Powiększenie poziomu</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Map service</source>
+        <target>usługodawcy map</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Cloudmade key</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>GoogleMap</source>
+        <target>Google Mapy</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>OpenStreetMap</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Latitude</source>
+        <target>Szerokość geograficzna</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Longitude</source>
+        <target>Długość geograficzna</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

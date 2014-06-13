@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="fr" datatype="plaintext" original="messages" date="2010-10-08T14:29:54Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Username</source>
+        <target>Nom d'usager</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Email</source>
+        <target>Courriel</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Registered on</source>
+        <target>Inscrit le</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Status</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hi %first_name%</source>
+        <target>Bonjour %first_name%</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>This e-mail is being sent because you requested a new password.</source>
+        <target>Ce courriel vous est envoyé car vous avez demandé un nouveau mot de passe</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Your new password is: %new_password%</source>
+        <target>Votre nouveau mot de passe est: $new_password%</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>New local user</source>
+        <target>Nouvel usager local</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>"%value%" is too long (%max_length% characters max).</source>
+        <target>"%value%" est trop long (maximum %max_length% caractères)</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>"%value%" is too short (%min_length% characters min).</source>
+        <target>"%value%" est trop court (maximum %min_length% caractères)</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>An object with the same "%column%" already exist.</source>
+        <target>Un objet avec la même valeur "%column%" existe déjà.</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>The two emails you entered do not match.</source>
+        <target>Les deux adresses courriels que vous avez entrées ne sont pas identiques.</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Unexpected extra form field named "%field%".</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>The form submission cannot be processed. It probably means that you have uploaded a file that is too big.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>The two passwords must be the same.</source>
+        <target>Les deux mots de passe doivent être identiques.</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>id</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>username</source>
+        <target>Nom d'utilisateur</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>email</source>
+        <target>Courriel</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Password again</source>
+        <target>Entrer de nouveau le mot de passe</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Email again</source>
+        <target>Entrer de nouveau l'adresse courriel</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>The password you entered is not valid.</source>
+        <target>Le mot de passe n'est pas bon.</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>The username or email you entered does not exist</source>
+        <target>Le nom d'utilisateur ou courriel n'existe pas</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>status</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Denied</source>
+        <target>Interdit</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Allowed</source>
+        <target>Permis</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Validation</source>
+        <target>Validation</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Locked</source>
+        <target>Barré</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>My Account</source>
+        <target>Mon compte</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Save</source>
+        <target>Sauvegarder</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>password is too long (%max_length% characters max).</source>
+        <target>Mot de passe trop long (maximum %max_length% caractères)</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>password is too short (%min_length% characters min).</source>
+        <target>Mot de passe trop court (minimum %min_length% caractères)</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>An account with the same email already exists</source>
+        <target>Un compte existe déjà pour cette adresse courriel</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>An account with the same username already exists</source>
+        <target>Ce nom d'utilisateur n'est pas disponible</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>You must enter old password.</source>
+        <target>Vous devez entrer votre ancien mot de passe</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>username_lower</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Old password</source>
+        <target>Mot de passe actuel</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Manage local users</source>
+        <target>Gérer les usagers locaux</target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>Connect</source>
+        <target>Connexion</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>I forgot my password</source>
+        <target>J'ai oublié mon mot de passe</target>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Don't have an account yet?</source>
+        <target>Vous n'avez pas encore de compte?</target>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Id</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Username lower</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Signup for a free account</source>
+        <target>Créer un compte gratuit</target>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>Local users list</source>
+        <target>Liste des usagers</target>
+      </trans-unit>
+      <trans-unit id="47">
+        <source> csrf token</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Edit Local User</source>
+        <target>Éditer usager local</target>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Remember me</source>
+        <target>Mémoriser mon identité sur cette machine</target>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Text before</source>
+        <target>Texte avant</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Text after</source>
+        <target>Texte après</target>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Html text to display before the login form</source>
+        <target>Texte Html à afficher avant le formulaire de connexion</target>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>Html text to display after the login form</source>
+        <target>Texte Html a afficher après le formulaire de connexion</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Id has changed, form cannot be saved</source>
+        <target>L'id a changé, le formulaire ne peut être sauvé</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>The user was updated successfully.</source>
+        <target>L'usager a été mis à jour.</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>The user was created successfully.</source>
+        <target>L'usager a été créé avec succès.</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Successfully saved.</source>
+        <target>Données mises à jour.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
